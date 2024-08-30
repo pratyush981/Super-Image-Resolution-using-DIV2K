@@ -2,7 +2,6 @@ import os
 import numpy as np
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
-# Function to load and preprocess images
 def load_and_preprocess_image(image_path, target_size=(128, 128)):
     img = load_img(image_path, target_size=target_size, color_mode='rgb')
     img_array = img_to_array(img) / 255.0
